@@ -1,7 +1,87 @@
+
+body {
+	font-family: Roboto; /* google font */
+	background: url("https://kbdevstorage1.blob.core.windows.net/asset-blobs/19185_en_1");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: ceenter;
+}
+
+
+span {
+	background: #e74c3c;
+	height: 40px;
+	margin-right: 20px;
+	text-align: center;
+	color: white;
+	width: 0;
+	display: inline-block;
+	transition: 0.1s linear; /* make a animation-like affect when the span hides */
+	opacity: 0; /* hide the trash icon */
+}
+
+li:hover span {
+	width: 40px;
+	opacity: 1.0; /* shows the trash icon */
+}
+
+h1 {
+	background: green;
+	text-transform: uppercase;
+	margin: 0;
+	padding: 10px 20px;
+	color: white;
+	font-size: 22px;
+	font-weight: 700;
+	background: #000046;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	background: #ffffff;
+	height: 40px;
+	line-height: 40px;
+	color: #666666;
+}
+
+li:nth-child(2n){
+	background: #E3E3E3; /* Change the background of all even <li> */ 
+}
+
+
+
+input {
+	font-size: 24px;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 15px 15px 15px 20px;
+	color: blue;
+	border:4px solid rgba(0,0,0,0);
+	background: #E3E3E3;
+	font-weight: 500
+}
+
+
+input:focus {
+	background: white;
+	border: 3px solid #1CB5E0;
+	outline: none;
+	color: blue;
+}
+
+
 #container {
-	border: 2px black solid;
 	width: 400px;
-	margin: 10px auto;
+	margin: 100px auto;
+	background: #f8f8f8;
+	box-shadow: 0 0 4px rgba(0,0,0,0.2); /* shadow effect */
 }
 
 .completed {
@@ -9,10 +89,12 @@
 	text-decoration: line-through;
 }
 
-span {
 
+.fa-plus {
+	float: right;
 }
 
-.spanClass{
-	display: all;
+.fa-arrow-right {
+	color: green;
+	padding: 10px;
 }
